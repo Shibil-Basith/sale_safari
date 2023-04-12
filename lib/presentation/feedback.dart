@@ -3,8 +3,8 @@ import 'package:salesafari/core/colors/importedTheme.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class FeedbackBox extends StatelessWidget {
-  final cmail=Uri.parse('mailto:project.directrade@gmail.com');
-  final cphone=Uri.parse('tel:+919207631619');
+  final cmail=Uri.parse('mailto:salesafariecommerce@gmail.com');
+  final cphone=Uri.parse('tel:+91 8891160597');
   @override
   Widget build(BuildContext context) {
     return Scaffold(
