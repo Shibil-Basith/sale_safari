@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:salesafari/core/colors/Colors.dart';
+import 'package:salesafari/core/colors/importedTheme.dart';
 import 'package:salesafari/presentation/admin/screens/view_users/view_customers.dart';
 import 'package:salesafari/presentation/admin/screens/view_users/view_sellers.dart';
 
@@ -15,11 +16,9 @@ class ViewTabBar extends StatelessWidget {
             automaticallyImplyLeading: false,
             backgroundColor: Colors.white,
             foregroundColor: Colors.black,
-            title: const Text(
+            title: Text(
               'Admin Dashboard',
-              style: TextStyle(
-                fontSize: 27,
-              ),
+              style: titleTextStyle
             ),
             actions: [
               IconButton(
@@ -28,15 +27,15 @@ class ViewTabBar extends StatelessWidget {
                   Navigator.pushNamed(context, 'adminprofile');
                 },
                 icon: const Icon(
-                  Icons.account_circle_outlined,
+                  Icons.admin_panel_settings_rounded,
                 ),
               ),
             ],
             // ignore: prefer_const_constructors
             bottom:TabBar(tabs: 
-             const [
-              Tab(child: Text('View Sellers',style: TextStyle(color: textColor),),),
-              Tab(child: Text('View Customers',style: TextStyle(color: textColor),),),
+             [
+              Tab(child: Text('View Sellers',style: facilityTextStyle,),),
+              Tab(child: Text('View Customers',style: facilityTextStyle,),),
             ]
             ),
           ),

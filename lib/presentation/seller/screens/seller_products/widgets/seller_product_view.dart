@@ -127,8 +127,10 @@ class SellerProductView extends StatelessWidget {
                         //SizedBox(height: 3,),
                         Row(
                           children: [
-                            Padding(padding: EdgeInsets.all(10),
-                              child: Text(passingdocument['description'], style: normalTextStyle,),
+                            Flexible(
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text(passingdocument['description'], style: normalTextStyle, overflow: TextOverflow.ellipsis, maxLines: 10,),
+                              ),
                             ),
                           ],
                         ),SizedBox(height: 30,),

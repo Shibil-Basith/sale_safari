@@ -184,6 +184,9 @@ void decrement() {
                                 ),
                               ),
                               Spacer(),
+                              Spacer(),
+                              Spacer(),
+                              Spacer(),
                               Container(
                                 height: 50,
                                 width: width/8,

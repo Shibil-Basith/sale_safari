@@ -88,6 +88,7 @@ flutter:
     - assets/images/snacks.jpeg
     - assets/images/seller.jpg
     - assets/images/slogan logo.png
+    - assets/images/imageloading.gif
     - assets/icon/dtslogan.jpeg
     - assets/lottie/product_img_lottie.json
     - assets/lottie/empty_box.json
